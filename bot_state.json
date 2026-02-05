@@ -1,0 +1,37 @@
+{
+  "status": "Running",
+  "account_id": "101-002-37869071-001",
+  "latest_data": {
+    "EUR_USD": {
+      "price": 1.18058,
+      "rsi": 59.49,
+      "trend": "DOWN",
+      "last_updated": "2026-02-04T17:05:17.287068"
+    },
+    "GBP_USD": {
+      "price": 1.36603,
+      "rsi": 68.99,
+      "trend": "DOWN",
+      "last_updated": "2026-02-04T17:05:17.364851"
+    },
+    "USD_JPY": {
+      "price": 156.815,
+      "rsi": 22.71,
+      "trend": "UP",
+      "last_updated": "2026-02-04T17:05:17.459145"
+    },
+    "AUD_USD": {
+      "price": 0.69966,
+      "rsi": 54.78,
+      "trend": "DOWN",
+      "last_updated": "2026-02-04T17:05:17.582385"
+    },
+    "USD_CAD": {
+      "price": 1.36634,
+      "rsi": 39.79,
+      "trend": "UP",
+      "last_updated": "2026-02-04T17:05:17.682193"
+    }
+  },
+  "active_trades": []
+}

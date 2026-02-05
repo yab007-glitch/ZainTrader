@@ -1,0 +1,8 @@
+oandapyV20==0.7.2
+pandas==2.2.0
+numpy==1.26.3
+python-dotenv==1.0.0
+flask==3.0.0
+plotly==5.18.0
+requests==2.31.0
+ta-lib-bin; sys_platform == 'win32'

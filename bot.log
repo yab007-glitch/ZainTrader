@@ -1,0 +1,666 @@
+2026-02-04 16:35:51,531 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.72:5001
+2026-02-04 16:35:51,532 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-04 16:36:51,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.1.72:5002
+2026-02-04 16:36:51,670 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-04 16:36:56,538 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:36:56] "GET / HTTP/1.1" 200 -
+2026-02-04 16:36:58,588 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:36:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:00,580 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:00] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:02,581 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:02] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:04,583 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:06,582 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:06] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:08,584 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:08] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:10,584 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:12,587 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:12] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:14,586 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:14] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:16,587 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:18,587 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:18] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:20,589 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:22,589 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:24,590 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:24] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:25,023 - oandapyV20.oandapyV20 - INFO - setting up API-client for environment practice
+2026-02-04 16:37:25,024 - ZainTrader - INFO - Bot Loop Started
+2026-02-04 16:37:25,024 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:25] "POST /api/start HTTP/1.1" 200 -
+2026-02-04 16:37:25,025 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:37:25,376 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:37:25,377 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:37:25,437 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:37:25,438 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:37:25,505 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:37:25,506 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:37:25,574 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:37:25,574 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:37:25,635 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -29651 | SL: 0.700195 | TP: 0.69898
+2026-02-04 16:37:25,635 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:37:25,691 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245406', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245406', 'requestID': '61468124624652439', 'time': '2026-02-04T21:37:25.685434188Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-29651', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69898', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70020', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245407', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245406', 'requestID': '61468124624652439', 'time': '2026-02-04T21:37:25.685434188Z', 'type': 'ORDER_CANCEL', 'orderID': '245406', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245406', '245407'], 'lastTransactionID': '245407'}
+2026-02-04 16:37:25,691 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:37:25,843 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:37:25,843 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:37:25,891 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 21763 | SL: 1.3660782142857142 | TP: 1.3677335714285714
+2026-02-04 16:37:25,891 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:37:25,941 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245408', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245408', 'requestID': '61468124624652589', 'time': '2026-02-04T21:37:25.936818313Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '21763', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36773', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36608', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderFillTransaction': {'id': '245409', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245408', 'requestID': '61468124624652589', 'time': '2026-02-04T21:37:25.936818313Z', 'type': 'ORDER_FILL', 'orderID': '245408', 'instrument': 'USD_CAD', 'units': '21763', 'requestedUnits': '21763', 'price': '1.36642', 'pl': '0.0000', 'quotePL': '0', 'financing': '0.0000', 'baseFinancing': '0', 'commission': '0.0000', 'accountBalance': '1200.8920', 'gainQuoteHomeConversionFactor': '1', 'lossQuoteHomeConversionFactor': '1', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.1763', 'fullVWAP': '1.36642', 'reason': 'MARKET_ORDER', 'tradeOpened': {'price': '1.36642', 'tradeID': '245409', 'units': '21763', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.1763', 'initialMarginRequired': '594.7044'}, 'fullPrice': {'closeoutBid': '1.36592', 'closeoutAsk': '1.36673', 'timestamp': '2026-02-04T21:37:22.575465269Z', 'bids': [{'price': '1.36622', 'liquidity': '500000'}, {'price': '1.36621', 'liquidity': '500000'}, {'price': '1.36620', 'liquidity': '2000000'}, {'price': '1.36619', 'liquidity': '2000000'}, {'price': '1.36618', 'liquidity': '5000000'}, {'price': '1.36597', 'liquidity': '10000000'}, {'price': '1.36592', 'liquidity': '10000000'}], 'asks': [{'price': '1.36642', 'liquidity': '500000'}, {'price': '1.36644', 'liquidity': '2500000'}, {'price': '1.36646', 'liquidity': '2000000'}, {'price': '1.36647', 'liquidity': '5000000'}, {'price': '1.36668', 'liquidity': '10000000'}, {'price': '1.36673', 'liquidity': '10000000'}]}, 'homeConversionFactors': {'gainQuoteHome': {'factor': '1'}, 'lossQuoteHome': {'factor': '1'}, 'gainBaseHome': {'factor': '1.35948840'}, 'lossBaseHome': {'factor': '1.37315160'}}}, 'relatedTransactionIDs': ['245408', '245409', '245410', '245411'], 'lastTransactionID': '245411'}
+2026-02-04 16:37:26,316 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:26] "POST /api/stop HTTP/1.1" 200 -
+2026-02-04 16:37:26,596 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:26] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:26,867 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:26] "POST /api/stop HTTP/1.1" 200 -
+2026-02-04 16:37:28,597 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:30,600 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:30] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:30,799 - oandapyV20.oandapyV20 - INFO - setting up API-client for environment practice
+2026-02-04 16:37:30,799 - ZainTrader - INFO - Bot Loop Started
+2026-02-04 16:37:30,800 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:37:30,800 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:30] "POST /api/start HTTP/1.1" 200 -
+2026-02-04 16:37:31,045 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:37:31,045 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:37:31,113 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:37:31,113 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:37:31,168 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:37:31,169 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:37:31,220 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:37:31,220 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:37:31,259 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -29651 | SL: 0.700195 | TP: 0.69898
+2026-02-04 16:37:31,259 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:37:31,298 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245412', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245412', 'requestID': '61468124649822107', 'time': '2026-02-04T21:37:31.294837595Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-29651', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69898', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70020', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245413', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245412', 'requestID': '61468124649822107', 'time': '2026-02-04T21:37:31.294837595Z', 'type': 'ORDER_CANCEL', 'orderID': '245412', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245412', '245413'], 'lastTransactionID': '245413'}
+2026-02-04 16:37:31,298 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:37:31,354 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:37:31,354 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:37:31,391 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 21763 | SL: 1.3660782142857142 | TP: 1.3677335714285714
+2026-02-04 16:37:31,391 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:37:31,430 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245414', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245414', 'requestID': '115511320179722961', 'time': '2026-02-04T21:37:31.426887553Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '21763', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36773', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36608', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderFillTransaction': {'id': '245415', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245414', 'requestID': '115511320179722961', 'time': '2026-02-04T21:37:31.426887553Z', 'type': 'ORDER_FILL', 'orderID': '245414', 'instrument': 'USD_CAD', 'units': '21763', 'requestedUnits': '21763', 'price': '1.36640', 'pl': '0.0000', 'quotePL': '0', 'financing': '0.0000', 'baseFinancing': '0', 'commission': '0.0000', 'accountBalance': '1200.8920', 'gainQuoteHomeConversionFactor': '1', 'lossQuoteHomeConversionFactor': '1', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '1.9587', 'fullVWAP': '1.36640', 'reason': 'MARKET_ORDER', 'tradeOpened': {'price': '1.36640', 'tradeID': '245415', 'units': '21763', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '1.9587', 'initialMarginRequired': '594.7001'}, 'fullPrice': {'closeoutBid': '1.36592', 'closeoutAsk': '1.36671', 'timestamp': '2026-02-04T21:37:30.695743029Z', 'bids': [{'price': '1.36622', 'liquidity': '500000'}, {'price': '1.36621', 'liquidity': '500000'}, {'price': '1.36620', 'liquidity': '2000000'}, {'price': '1.36619', 'liquidity': '2000000'}, {'price': '1.36618', 'liquidity': '5000000'}, {'price': '1.36597', 'liquidity': '10000000'}, {'price': '1.36592', 'liquidity': '10000000'}], 'asks': [{'price': '1.36640', 'liquidity': '500000'}, {'price': '1.36642', 'liquidity': '2500000'}, {'price': '1.36644', 'liquidity': '2000000'}, {'price': '1.36645', 'liquidity': '5000000'}, {'price': '1.36666', 'liquidity': '10000000'}, {'price': '1.36671', 'liquidity': '10000000'}]}, 'homeConversionFactors': {'gainQuoteHome': {'factor': '1'}, 'lossQuoteHome': {'factor': '1'}, 'gainBaseHome': {'factor': '1.35947845'}, 'lossBaseHome': {'factor': '1.37314155'}}}, 'relatedTransactionIDs': ['245414', '245415', '245416', '245417'], 'lastTransactionID': '245417'}
+2026-02-04 16:37:32,082 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:32] "POST /api/start HTTP/1.1" 200 -
+2026-02-04 16:37:32,600 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:32] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:34,601 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:36,603 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:36] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:38,603 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:38] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:40,604 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:42,605 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:42] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:44,608 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:44] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:46,608 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:49,138 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:52,119 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:55,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:37:58,111 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:37:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:01,110 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:04,111 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:07,111 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:10,023 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:13,022 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:16,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:19,119 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:22,124 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:25,066 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:28,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:31,063 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:31,472 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:38:31,566 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:38:31,567 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:38:31,622 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:38:31,622 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:38:31,698 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:38:31,698 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:38:31,757 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:38:31,757 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:38:31,889 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -29275 | SL: 0.700195 | TP: 0.69898
+2026-02-04 16:38:31,889 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:38:31,930 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245422', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245422', 'requestID': '115511320431424545', 'time': '2026-02-04T21:38:31.929233268Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-29275', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69898', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70020', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245423', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245422', 'requestID': '115511320431424545', 'time': '2026-02-04T21:38:31.929233268Z', 'type': 'ORDER_CANCEL', 'orderID': '245422', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245422', '245423'], 'lastTransactionID': '245423'}
+2026-02-04 16:38:31,930 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:38:32,005 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:38:32,005 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:38:32,046 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 21487 | SL: 1.3660782142857142 | TP: 1.3677335714285714
+2026-02-04 16:38:32,046 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:38:32,102 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245424', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245424', 'requestID': '115511320435618967', 'time': '2026-02-04T21:38:32.097480667Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '21487', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36773', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36608', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245425', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245424', 'requestID': '115511320435618967', 'time': '2026-02-04T21:38:32.097480667Z', 'type': 'ORDER_CANCEL', 'orderID': '245424', 'reason': 'STOP_LOSS_ON_FILL_LOSS'}, 'relatedTransactionIDs': ['245424', '245425'], 'lastTransactionID': '245425'}
+2026-02-04 16:38:34,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:37,105 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:40,101 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:43,102 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:46,102 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:49,101 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:52,101 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:55,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:38:58,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:38:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:01,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:04,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:07,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:10,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:13,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:16,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:19,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:22,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:25,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:28,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:31,126 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:32,172 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:39:32,241 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:39:32,242 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:39:32,316 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:39:32,317 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:39:32,370 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:39:32,370 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:39:32,440 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:39:32,440 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:39:32,478 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -29275 | SL: 0.700195 | TP: 0.69898
+2026-02-04 16:39:32,478 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:39:32,516 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245426', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245426', 'requestID': '115511320687316581', 'time': '2026-02-04T21:39:32.518021427Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-29275', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69898', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70020', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245427', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245426', 'requestID': '115511320687316581', 'time': '2026-02-04T21:39:32.518021427Z', 'type': 'ORDER_CANCEL', 'orderID': '245426', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245426', '245427'], 'lastTransactionID': '245427'}
+2026-02-04 16:39:32,517 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:39:32,679 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:39:32,679 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:39:32,719 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 21487 | SL: 1.3660782142857142 | TP: 1.3677335714285714
+2026-02-04 16:39:32,719 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:39:32,756 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245428', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245428', 'requestID': '61468125157414404', 'time': '2026-02-04T21:39:32.756723620Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '21487', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36773', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36608', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245429', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245428', 'requestID': '61468125157414404', 'time': '2026-02-04T21:39:32.756723620Z', 'type': 'ORDER_CANCEL', 'orderID': '245428', 'reason': 'STOP_LOSS_ON_FILL_LOSS'}, 'relatedTransactionIDs': ['245428', '245429'], 'lastTransactionID': '245429'}
+2026-02-04 16:39:34,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:37,121 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:40,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:43,219 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:46,087 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:49,182 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:52,270 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:55,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:39:58,066 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:39:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:01,068 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:04,068 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:07,068 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:10,077 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:13,079 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:16,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:19,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:22,117 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:25,120 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:28,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:31,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:32,830 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:40:32,981 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:40:32,981 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:40:33,057 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:40:33,057 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:40:33,123 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:40:33,123 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:40:33,195 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:40:33,195 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:40:33,254 - ZainTrader - INFO - Scanning USD_CAD... No Signal.
+2026-02-04 16:40:34,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:37,121 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:40,120 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:43,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:46,119 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:49,117 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:52,117 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:55,066 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:40:58,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:40:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:01,066 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:04,069 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:07,063 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:10,064 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:13,125 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:16,116 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:19,117 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:22,119 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:25,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:28,072 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:31,026 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:33,299 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:41:33,551 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:41:33,552 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:41:33,700 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:41:33,700 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:41:33,904 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:41:33,905 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:41:34,000 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:41:34,000 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:41:34,075 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:34,103 - ZainTrader - INFO - Scanning USD_CAD... No Signal.
+2026-02-04 16:41:37,069 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:40,067 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:43,067 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:46,067 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:49,069 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:52,066 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:55,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:41:58,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:41:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:01,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:04,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:07,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:10,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:13,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:16,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:19,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:22,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:25,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:28,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:31,061 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:34,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:34,178 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:42:34,715 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:42:34,715 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:42:34,768 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:42:34,768 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:42:34,866 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:42:34,866 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:42:35,041 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:42:35,041 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:42:35,222 - ZainTrader - INFO - Scanning USD_CAD... No Signal.
+2026-02-04 16:42:37,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:40,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:43,060 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:46,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:49,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:52,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:55,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:42:58,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:42:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:01,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:04,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:07,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:10,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:13,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:16,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:19,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:22,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:25,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:28,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:31,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:34,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:35,240 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:43:35,303 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:43:35,304 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:43:35,428 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:43:35,428 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:43:35,514 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:43:35,514 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:43:35,580 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:43:35,580 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:43:35,642 - ZainTrader - INFO - Scanning USD_CAD... No Signal.
+2026-02-04 16:43:37,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:40,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:43,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:46,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:49,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:52,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:55,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:43:58,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:43:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:01,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:04,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:07,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:10,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:13,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:16,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:19,065 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:22,064 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:25,056 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:28,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:31,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:34,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:35,677 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:44:35,772 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:44:35,772 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:44:35,820 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:44:35,820 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:44:35,901 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:44:35,902 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:44:35,968 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:44:35,968 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:44:36,027 - ZainTrader - INFO - Scanning USD_CAD... No Signal.
+2026-02-04 16:44:37,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:40,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:43,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:46,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:49,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:52,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:52] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:55,057 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:55] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:44:58,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:44:58] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:01,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:01] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:04,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:04] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:07,124 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:07] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:10,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:13,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:16,024 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:19,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:22,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:25,058 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:28,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:28] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:31,124 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:31] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:34,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:34] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:36,103 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:45:36,234 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:45:36,234 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:45:36,289 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:45:36,289 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:45:36,359 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:45:36,360 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:45:36,430 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:45:36,430 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:45:36,539 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:45:36,539 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:45:36,588 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 19551 | SL: 1.3655935714285714 | TP: 1.3674128571428574
+2026-02-04 16:45:36,588 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:45:36,649 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245430', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245430', 'requestID': '61468126684398731', 'time': '2026-02-04T21:45:36.639756935Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '19551', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36741', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36559', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderFillTransaction': {'id': '245431', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245430', 'requestID': '61468126684398731', 'time': '2026-02-04T21:45:36.639756935Z', 'type': 'ORDER_FILL', 'orderID': '245430', 'instrument': 'USD_CAD', 'units': '19551', 'requestedUnits': '19551', 'price': '1.36661', 'pl': '0.0000', 'quotePL': '0', 'financing': '0.0000', 'baseFinancing': '0', 'commission': '0.0000', 'accountBalance': '1185.6579', 'gainQuoteHomeConversionFactor': '1', 'lossQuoteHomeConversionFactor': '1', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.4439', 'fullVWAP': '1.36661', 'reason': 'MARKET_ORDER', 'tradeOpened': {'price': '1.36661', 'tradeID': '245431', 'units': '19551', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.4439', 'initialMarginRequired': '534.3210'}, 'fullPrice': {'closeoutBid': '1.36606', 'closeoutAsk': '1.36692', 'timestamp': '2026-02-04T21:45:34.619330011Z', 'bids': [{'price': '1.36636', 'liquidity': '500000'}, {'price': '1.36635', 'liquidity': '500000'}, {'price': '1.36634', 'liquidity': '2000000'}, {'price': '1.36633', 'liquidity': '2000000'}, {'price': '1.36632', 'liquidity': '5000000'}, {'price': '1.36611', 'liquidity': '10000000'}, {'price': '1.36606', 'liquidity': '10000000'}], 'asks': [{'price': '1.36661', 'liquidity': '500000'}, {'price': '1.36663', 'liquidity': '2500000'}, {'price': '1.36665', 'liquidity': '2000000'}, {'price': '1.36666', 'liquidity': '5000000'}, {'price': '1.36687', 'liquidity': '10000000'}, {'price': '1.36692', 'liquidity': '10000000'}]}, 'homeConversionFactors': {'gainQuoteHome': {'factor': '1'}, 'lossQuoteHome': {'factor': '1'}, 'gainBaseHome': {'factor': '1.35964760'}, 'lossBaseHome': {'factor': '1.37331240'}}}, 'relatedTransactionIDs': ['245430', '245431', '245432', '245433'], 'lastTransactionID': '245433'}
+2026-02-04 16:45:37,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:37] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:40,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:40] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:43,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:43] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:46,149 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:46] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:45:49,046 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:45:49] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:46:16,010 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:46:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:46:18,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:46:18] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:46:36,709 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:46:36,842 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:46:36,843 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:46:36,906 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:46:36,906 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:46:36,977 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:46:36,977 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:46:37,062 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:46:37,062 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:46:37,164 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:46:37,164 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:46:37,206 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 19551 | SL: 1.3655935714285714 | TP: 1.3674128571428574
+2026-02-04 16:46:37,206 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:46:37,347 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245434', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245434', 'requestID': '115511322470197608', 'time': '2026-02-04T21:46:37.269577386Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '19551', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36741', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36559', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderFillTransaction': {'id': '245435', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245434', 'requestID': '115511322470197608', 'time': '2026-02-04T21:46:37.269577386Z', 'type': 'ORDER_FILL', 'orderID': '245434', 'instrument': 'USD_CAD', 'units': '19551', 'requestedUnits': '19551', 'price': '1.36669', 'pl': '0.0000', 'quotePL': '0', 'financing': '0.0000', 'baseFinancing': '0', 'commission': '0.0000', 'accountBalance': '1185.6579', 'gainQuoteHomeConversionFactor': '1', 'lossQuoteHomeConversionFactor': '1', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.1506', 'fullVWAP': '1.36669', 'reason': 'MARKET_ORDER', 'tradeOpened': {'price': '1.36669', 'tradeID': '245435', 'units': '19551', 'guaranteedExecutionFee': '0.0000', 'quoteGuaranteedExecutionFee': '0', 'halfSpreadCost': '2.1506', 'initialMarginRequired': '534.3601'}, 'fullPrice': {'closeoutBid': '1.36617', 'closeoutAsk': '1.36700', 'timestamp': '2026-02-04T21:46:37.021117115Z', 'bids': [{'price': '1.36647', 'liquidity': '500000'}, {'price': '1.36646', 'liquidity': '500000'}, {'price': '1.36645', 'liquidity': '2000000'}, {'price': '1.36644', 'liquidity': '2000000'}, {'price': '1.36643', 'liquidity': '5000000'}, {'price': '1.36622', 'liquidity': '10000000'}, {'price': '1.36617', 'liquidity': '10000000'}], 'asks': [{'price': '1.36669', 'liquidity': '500000'}, {'price': '1.36671', 'liquidity': '2500000'}, {'price': '1.36673', 'liquidity': '2000000'}, {'price': '1.36674', 'liquidity': '5000000'}, {'price': '1.36695', 'liquidity': '10000000'}, {'price': '1.36700', 'liquidity': '10000000'}]}, 'homeConversionFactors': {'gainQuoteHome': {'factor': '1'}, 'lossQuoteHome': {'factor': '1'}, 'gainBaseHome': {'factor': '1.35974710'}, 'lossBaseHome': {'factor': '1.37341290'}}}, 'relatedTransactionIDs': ['245434', '245435', '245436', '245437'], 'lastTransactionID': '245437'}
+2026-02-04 16:47:11,120 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:47:11] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:47:14,080 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:47:14] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:47:17,025 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:47:17] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:47:37,391 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:47:37,477 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:47:37,477 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:47:37,541 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:47:37,542 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:47:37,793 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:47:37,793 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:47:37,851 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:47:37,852 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:47:37,989 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:47:37,989 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:47:38,059 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 19551 | SL: 1.3655935714285714 | TP: 1.3674128571428574
+2026-02-04 16:47:38,059 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:47:38,164 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245438', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245438', 'requestID': '115511322726091016', 'time': '2026-02-04T21:47:38.132985810Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '19551', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36741', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36559', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245439', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245438', 'requestID': '115511322726091016', 'time': '2026-02-04T21:47:38.132985810Z', 'type': 'ORDER_CANCEL', 'orderID': '245438', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245438', '245439'], 'lastTransactionID': '245439'}
+2026-02-04 16:48:16,693 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:48:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:48:19,069 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:48:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:48:38,192 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:48:38,299 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:48:38,299 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:48:38,359 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:48:38,359 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:48:38,469 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:48:38,469 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:48:38,543 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:48:38,544 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:48:38,685 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:48:38,686 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:48:38,738 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 19551 | SL: 1.3655935714285714 | TP: 1.3674128571428574
+2026-02-04 16:48:38,739 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:48:38,807 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245440', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245440', 'requestID': '115511322977788663', 'time': '2026-02-04T21:48:38.814416265Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '19551', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36741', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36559', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245441', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245440', 'requestID': '115511322977788663', 'time': '2026-02-04T21:48:38.814416265Z', 'type': 'ORDER_CANCEL', 'orderID': '245440', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245440', '245441'], 'lastTransactionID': '245441'}
+2026-02-04 16:49:17,132 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:49:17] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:49:20,092 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:49:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:49:38,815 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:49:38,895 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:49:38,895 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:49:38,945 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:49:38,946 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:49:39,033 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:49:39,033 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:49:39,101 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:49:39,101 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:49:39,156 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:49:39,156 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:49:39,276 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 19551 | SL: 1.3655935714285714 | TP: 1.3674128571428574
+2026-02-04 16:49:39,276 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:49:39,319 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245442', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245442', 'requestID': '61468127703782373', 'time': '2026-02-04T21:49:39.333272595Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '19551', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36741', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36559', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245443', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245442', 'requestID': '61468127703782373', 'time': '2026-02-04T21:49:39.333272595Z', 'type': 'ORDER_CANCEL', 'orderID': '245442', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245442', '245443'], 'lastTransactionID': '245443'}
+2026-02-04 16:50:11,172 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:50:11] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:50:14,108 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:50:14] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:50:17,171 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:50:17] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:50:20,116 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:50:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:50:39,392 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:50:39,484 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:50:39,484 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:50:39,626 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:50:39,626 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:50:39,686 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:50:39,686 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:50:39,748 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:50:39,749 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:50:39,809 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:50:39,809 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:50:39,866 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18661 | SL: 1.3658646428571428 | TP: 1.3677707142857143
+2026-02-04 16:50:39,866 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:50:39,910 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245444', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245444', 'requestID': '115511323485382372', 'time': '2026-02-04T21:50:39.924821898Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18661', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36777', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36586', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245445', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245444', 'requestID': '115511323485382372', 'time': '2026-02-04T21:50:39.924821898Z', 'type': 'ORDER_CANCEL', 'orderID': '245444', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245444', '245445'], 'lastTransactionID': '245445'}
+2026-02-04 16:51:17,371 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:51:17] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:51:20,032 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:51:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:51:39,985 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:51:40,063 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:51:40,063 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:51:40,166 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:51:40,166 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:51:40,298 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:51:40,298 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:51:40,459 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:51:40,460 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:51:40,524 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:51:40,524 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:51:40,577 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18661 | SL: 1.3658646428571428 | TP: 1.3677707142857143
+2026-02-04 16:51:40,577 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:51:40,636 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245446', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245446', 'requestID': '61468128211378945', 'time': '2026-02-04T21:51:40.649233332Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18661', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36777', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36586', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245447', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245446', 'requestID': '61468128211378945', 'time': '2026-02-04T21:51:40.649233332Z', 'type': 'ORDER_CANCEL', 'orderID': '245446', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245446', '245447'], 'lastTransactionID': '245447'}
+2026-02-04 16:52:18,142 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:52:18] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:52:21,088 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:52:21] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:52:40,701 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:52:40,828 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:52:40,828 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:52:40,879 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:52:40,879 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:52:40,935 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:52:40,935 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:52:41,006 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:52:41,006 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:52:41,074 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:52:41,076 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:52:41,204 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18661 | SL: 1.3658646428571428 | TP: 1.3677707142857143
+2026-02-04 16:52:41,204 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:52:41,244 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245448', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245448', 'requestID': '61468128467271963', 'time': '2026-02-04T21:52:41.264119988Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18661', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36777', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36586', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245449', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245448', 'requestID': '61468128467271963', 'time': '2026-02-04T21:52:41.264119988Z', 'type': 'ORDER_CANCEL', 'orderID': '245448', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245448', '245449'], 'lastTransactionID': '245449'}
+2026-02-04 16:53:11,648 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:53:11] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:53:14,121 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:53:14] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:53:18,567 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:53:18] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:53:21,120 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:53:21] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:53:41,250 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:53:41,346 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:53:41,346 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:53:41,514 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:53:41,514 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:53:41,566 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:53:41,567 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:53:41,653 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:53:41,653 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:53:41,750 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:53:41,750 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:53:41,801 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18661 | SL: 1.3658646428571428 | TP: 1.3677707142857143
+2026-02-04 16:53:41,801 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:53:41,843 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245450', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245450', 'requestID': '115511324248869646', 'time': '2026-02-04T21:53:41.863072922Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18661', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36777', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36586', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245451', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245450', 'requestID': '115511324248869646', 'time': '2026-02-04T21:53:41.863072922Z', 'type': 'ORDER_CANCEL', 'orderID': '245450', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245450', '245451'], 'lastTransactionID': '245451'}
+2026-02-04 16:54:19,143 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:54:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:54:22,112 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:54:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:54:41,893 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:54:42,009 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:54:42,009 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:54:42,072 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:54:42,072 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:54:42,131 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:54:42,131 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:54:42,227 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 16:54:42,228 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:54:42,370 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:54:42,371 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:54:42,420 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18661 | SL: 1.3658646428571428 | TP: 1.3677707142857143
+2026-02-04 16:54:42,420 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:54:42,478 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245452', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245452', 'requestID': '115511324504762932', 'time': '2026-02-04T21:54:42.493603839Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18661', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36777', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36586', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245453', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245452', 'requestID': '115511324504762932', 'time': '2026-02-04T21:54:42.493603839Z', 'type': 'ORDER_CANCEL', 'orderID': '245452', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245452', '245453'], 'lastTransactionID': '245453'}
+2026-02-04 16:55:19,867 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:55:19] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:55:22,118 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:55:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:55:42,493 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:55:42,636 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:55:42,636 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:55:42,757 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:55:42,758 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:55:42,835 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:55:42,835 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:55:42,887 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:55:42,887 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:55:42,927 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -36282 | SL: 0.7002167857142857 | TP: 0.6992364285714285
+2026-02-04 16:55:42,927 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:55:42,967 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245454', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245454', 'requestID': '61468129226564795', 'time': '2026-02-04T21:55:42.993500779Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-36282', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69924', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70022', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245455', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245454', 'requestID': '61468129226564795', 'time': '2026-02-04T21:55:42.993500779Z', 'type': 'ORDER_CANCEL', 'orderID': '245454', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245454', '245455'], 'lastTransactionID': '245455'}
+2026-02-04 16:55:42,967 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:55:43,022 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:55:43,022 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:55:43,134 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18351 | SL: 1.3656439285714286 | TP: 1.3675821428571429
+2026-02-04 16:55:43,134 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:55:43,193 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245456', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245456', 'requestID': '61468129230759227', 'time': '2026-02-04T21:55:43.207008012Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18351', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36758', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36564', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245457', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245456', 'requestID': '61468129230759227', 'time': '2026-02-04T21:55:43.207008012Z', 'type': 'ORDER_CANCEL', 'orderID': '245456', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245456', '245457'], 'lastTransactionID': '245457'}
+2026-02-04 16:56:11,672 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:56:11] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:56:14,059 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:56:14] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:56:20,120 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:56:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:56:23,084 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:56:23] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:56:43,253 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:56:43,345 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:56:43,345 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:56:43,479 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:56:43,479 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:56:43,534 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:56:43,534 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:56:43,591 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:56:43,591 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:56:43,665 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -36282 | SL: 0.7002167857142857 | TP: 0.6992364285714285
+2026-02-04 16:56:43,666 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:56:43,710 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245458', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245458', 'requestID': '115511325012356970', 'time': '2026-02-04T21:56:43.735833931Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-36282', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69924', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70022', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245459', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245458', 'requestID': '115511325012356970', 'time': '2026-02-04T21:56:43.735833931Z', 'type': 'ORDER_CANCEL', 'orderID': '245458', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245458', '245459'], 'lastTransactionID': '245459'}
+2026-02-04 16:56:43,710 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:56:43,760 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:56:43,760 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:56:43,800 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18351 | SL: 1.3656439285714286 | TP: 1.3675821428571429
+2026-02-04 16:56:43,800 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:56:43,841 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245460', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245460', 'requestID': '61468129482460435', 'time': '2026-02-04T21:56:43.869535609Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18351', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36758', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36564', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245461', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245460', 'requestID': '61468129482460435', 'time': '2026-02-04T21:56:43.869535609Z', 'type': 'ORDER_CANCEL', 'orderID': '245460', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245460', '245461'], 'lastTransactionID': '245461'}
+2026-02-04 16:57:20,197 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:57:20] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:57:23,124 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:57:23] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:57:43,915 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:57:44,023 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:57:44,023 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:57:44,100 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:57:44,100 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:57:44,259 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:57:44,259 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:57:44,316 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:57:44,316 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:57:44,360 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -36282 | SL: 0.7002167857142857 | TP: 0.6992364285714285
+2026-02-04 16:57:44,361 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:57:44,414 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245462', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245462', 'requestID': '115511325268248662', 'time': '2026-02-04T21:57:44.440747837Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-36282', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69924', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70022', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245463', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245462', 'requestID': '115511325268248662', 'time': '2026-02-04T21:57:44.440747837Z', 'type': 'ORDER_CANCEL', 'orderID': '245462', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245462', '245463'], 'lastTransactionID': '245463'}
+2026-02-04 16:57:44,414 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:57:44,506 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:57:44,506 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:57:44,564 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18351 | SL: 1.3656439285714286 | TP: 1.3675821428571429
+2026-02-04 16:57:44,564 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:57:44,610 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245464', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245464', 'requestID': '115511325268248782', 'time': '2026-02-04T21:57:44.637790439Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18351', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36758', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36564', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245465', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245464', 'requestID': '115511325268248782', 'time': '2026-02-04T21:57:44.637790439Z', 'type': 'ORDER_CANCEL', 'orderID': '245464', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245464', '245465'], 'lastTransactionID': '245465'}
+2026-02-04 16:58:21,170 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:58:21] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:58:24,123 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:58:24] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:58:44,681 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:58:45,250 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:58:45,250 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:58:45,343 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:58:45,343 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:58:45,425 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:58:45,425 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:58:45,510 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:58:45,511 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:58:45,636 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -36282 | SL: 0.7002167857142857 | TP: 0.6992364285714285
+2026-02-04 16:58:45,636 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:58:45,688 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245466', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245466', 'requestID': '115511325524141887', 'time': '2026-02-04T21:58:45.715185841Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-36282', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69924', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70022', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245467', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245466', 'requestID': '115511325524141887', 'time': '2026-02-04T21:58:45.715185841Z', 'type': 'ORDER_CANCEL', 'orderID': '245466', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245466', '245467'], 'lastTransactionID': '245467'}
+2026-02-04 16:58:45,688 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:58:45,758 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:58:45,759 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:58:45,841 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18351 | SL: 1.3656439285714286 | TP: 1.3675821428571429
+2026-02-04 16:58:45,841 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:58:45,916 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245468', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245468', 'requestID': '115511325524142059', 'time': '2026-02-04T21:58:45.936114584Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18351', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36758', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36564', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245469', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245468', 'requestID': '115511325524142059', 'time': '2026-02-04T21:58:45.936114584Z', 'type': 'ORDER_CANCEL', 'orderID': '245468', 'reason': 'INSUFFICIENT_MARGIN'}, 'relatedTransactionIDs': ['245468', '245469'], 'lastTransactionID': '245469'}
+2026-02-04 16:59:12,135 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:59:12] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:59:15,079 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:59:15] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:59:22,027 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:59:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:59:25,122 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 16:59:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 16:59:45,919 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 16:59:46,037 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 16:59:46,038 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 16:59:46,137 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 16:59:46,138 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 16:59:46,210 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 16:59:46,210 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 16:59:46,417 - ZainTrader - INFO - SIGNAL FOUND: AUD_USD SELL (Downtrend Rally Sell)
+2026-02-04 16:59:46,417 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:59:46,468 - ZainTrader - INFO - PLACING ORDER: SELL AUD_USD | Units: -36282 | SL: 0.7002167857142857 | TP: 0.6992364285714285
+2026-02-04 16:59:46,469 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:59:46,512 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245470', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245470', 'requestID': '61468130250142116', 'time': '2026-02-04T21:59:46.545784607Z', 'type': 'MARKET_ORDER', 'instrument': 'AUD_USD', 'units': '-36282', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '0.69924', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '0.70022', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245471', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245470', 'requestID': '61468130250142116', 'time': '2026-02-04T21:59:46.545784607Z', 'type': 'ORDER_CANCEL', 'orderID': '245470', 'reason': 'MARKET_HALTED'}, 'relatedTransactionIDs': ['245470', '245471'], 'lastTransactionID': '245471'}
+2026-02-04 16:59:46,513 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 16:59:46,573 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 16:59:46,574 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 16:59:46,628 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18351 | SL: 1.3656439285714286 | TP: 1.3675821428571429
+2026-02-04 16:59:46,628 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 16:59:46,670 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245472', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245472', 'requestID': '61468130250142216', 'time': '2026-02-04T21:59:46.705853299Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18351', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36758', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36564', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245473', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245472', 'requestID': '61468130250142216', 'time': '2026-02-04T21:59:46.705853299Z', 'type': 'ORDER_CANCEL', 'orderID': '245472', 'reason': 'MARKET_HALTED'}, 'relatedTransactionIDs': ['245472', '245473'], 'lastTransactionID': '245473'}
+2026-02-04 17:00:22,134 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:00:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:00:25,062 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:00:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:00:46,744 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 17:00:46,921 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 17:00:46,921 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 17:00:47,137 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 17:00:47,138 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 17:00:47,352 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 17:00:47,353 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 17:00:47,421 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 17:00:47,422 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 17:00:47,503 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 17:00:47,504 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 17:00:47,576 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18120 | SL: 1.3657053571428572 | TP: 1.3676692857142858
+2026-02-04 17:00:47,576 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 17:00:47,645 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245475', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245475', 'requestID': '115511326035929646', 'time': '2026-02-04T22:00:47.671012011Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18120', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36767', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36571', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245476', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245475', 'requestID': '115511326035929646', 'time': '2026-02-04T22:00:47.671012011Z', 'type': 'ORDER_CANCEL', 'orderID': '245475', 'reason': 'MARKET_HALTED'}, 'relatedTransactionIDs': ['245475', '245476'], 'lastTransactionID': '245476'}
+2026-02-04 17:01:22,693 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:01:22] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:01:25,063 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:01:25] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:01:47,688 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 17:01:47,804 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 17:01:47,805 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 17:01:47,876 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 17:01:47,877 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 17:01:47,952 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 17:01:47,953 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 17:01:48,089 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 17:01:48,090 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 17:01:48,159 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 17:01:48,160 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 17:01:48,198 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18120 | SL: 1.3657053571428572 | TP: 1.3676692857142858
+2026-02-04 17:01:48,198 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 17:01:48,244 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245477', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245477', 'requestID': '115511326291822947', 'time': '2026-02-04T22:01:48.276948952Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18120', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36767', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36571', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245478', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245477', 'requestID': '115511326291822947', 'time': '2026-02-04T22:01:48.276948952Z', 'type': 'ORDER_CANCEL', 'orderID': '245477', 'reason': 'MARKET_HALTED'}, 'relatedTransactionIDs': ['245477', '245478'], 'lastTransactionID': '245478'}
+2026-02-04 17:02:12,463 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:02:12] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:02:15,119 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:02:15] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:02:23,121 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:02:23] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:02:26,084 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:02:26] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:02:48,294 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 17:02:48,435 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 17:02:48,436 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 17:02:48,516 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 17:02:48,517 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 17:02:48,622 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 17:02:48,623 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 17:02:48,721 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 17:02:48,721 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 17:02:48,875 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 17:02:48,876 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 17:02:48,919 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18120 | SL: 1.3657053571428572 | TP: 1.3676692857142858
+2026-02-04 17:02:48,919 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 17:02:48,976 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245479', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245479', 'requestID': '115511326547716311', 'time': '2026-02-04T22:02:49.014408971Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18120', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36767', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36571', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245480', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245479', 'requestID': '115511326547716311', 'time': '2026-02-04T22:02:49.014408971Z', 'type': 'ORDER_CANCEL', 'orderID': '245479', 'reason': 'MARKET_HALTED'}, 'relatedTransactionIDs': ['245479', '245480'], 'lastTransactionID': '245480'}
+2026-02-04 17:03:23,389 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:03:23] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:03:26,275 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:03:26] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:05:10,751 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:05:10] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:05:13,297 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:05:13] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:05:16,250 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:05:16] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:05:17,071 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles
+2026-02-04 17:05:17,287 - ZainTrader - INFO - Scanning EUR_USD... No Signal.
+2026-02-04 17:05:17,287 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/GBP_USD/candles
+2026-02-04 17:05:17,364 - ZainTrader - INFO - Scanning GBP_USD... No Signal.
+2026-02-04 17:05:17,365 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_JPY/candles
+2026-02-04 17:05:17,459 - ZainTrader - INFO - Scanning USD_JPY... No Signal.
+2026-02-04 17:05:17,460 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/AUD_USD/candles
+2026-02-04 17:05:17,582 - ZainTrader - INFO - Scanning AUD_USD... No Signal.
+2026-02-04 17:05:17,582 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/instruments/USD_CAD/candles
+2026-02-04 17:05:17,682 - ZainTrader - INFO - SIGNAL FOUND: USD_CAD BUY (Uptrend Dip Buy)
+2026-02-04 17:05:17,682 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/summary
+2026-02-04 17:05:17,725 - ZainTrader - INFO - PLACING ORDER: BUY USD_CAD | Units: 18732 | SL: 1.3657292857142858 | TP: 1.3675614285714286
+2026-02-04 17:05:17,726 - oandapyV20.oandapyV20 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-37869071-001/orders
+2026-02-04 17:05:17,787 - ZainTrader - INFO - Order Successful: {'orderCreateTransaction': {'id': '245485', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245485', 'requestID': '61468131638691313', 'time': '2026-02-04T22:05:17.799790862Z', 'type': 'MARKET_ORDER', 'instrument': 'USD_CAD', 'units': '18732', 'timeInForce': 'FOK', 'positionFill': 'DEFAULT', 'takeProfitOnFill': {'price': '1.36756', 'timeInForce': 'GTC'}, 'stopLossOnFill': {'price': '1.36573', 'timeInForce': 'GTC', 'triggerMode': 'TOP_OF_BOOK'}, 'reason': 'CLIENT_ORDER'}, 'orderCancelTransaction': {'id': '245486', 'accountID': '101-002-37869071-001', 'userID': 37869071, 'batchID': '245485', 'requestID': '61468131638691313', 'time': '2026-02-04T22:05:17.799790862Z', 'type': 'ORDER_CANCEL', 'orderID': '245485', 'reason': 'STOP_LOSS_ON_FILL_LOSS'}, 'relatedTransactionIDs': ['245485', '245486'], 'lastTransactionID': '245486'}
+2026-02-04 17:05:24,910 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:05:24] "GET /api/state HTTP/1.1" 200 -
+2026-02-04 17:05:27,292 - werkzeug - INFO - 127.0.0.1 - - [04/Feb/2026 17:05:27] "GET /api/state HTTP/1.1" 200 -
