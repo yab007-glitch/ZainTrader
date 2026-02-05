@@ -57,6 +57,6 @@ if __name__ == '__main__':
         print(f"Failed to auto-start bot: {e}")
 
     # Get port from environment variable for Railway compatibility
-    port = int(os.environ.get('PORT', 5005))
+    port = int(os.environ.get('PORT', 5006))
     print(f"Starting Interface on http://0.0.0.0:{port}")
     app.run(debug=False, host='0.0.0.0', port=port)
