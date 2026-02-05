@@ -42,6 +42,7 @@ def get_state():
         return jsonify({"status": "Waiting for data..."})
 
 if __name__ == '__main__':
-    # Start the Flask app
-    print("Starting Interface on http://localhost:5002")
-    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5002)
+    # Get port from environment variable for Railway compatibility
+    port = int(os.environ.get('PORT', 5002))
+    print(f"Starting Interface on http://0.0.0.0:{port}")
+    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=port)
