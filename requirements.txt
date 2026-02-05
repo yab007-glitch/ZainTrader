@@ -5,4 +5,5 @@ python-dotenv==1.0.0
 flask==3.0.0
 plotly==5.18.0
 requests==2.31.0
+pytz==2025.1
 ta-lib-bin; sys_platform == 'win32'
