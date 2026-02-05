@@ -47,7 +47,16 @@ def get_state():
         return jsonify({"status": "Waiting for data..."})
 
 if __name__ == '__main__':
+    # Auto-start bot on launch
+    try:
+        print("Auto-initializing TradingBot...")
+        bot = TradingBot()
+        bot.start()
+        print("Bot started successfully.")
+    except Exception as e:
+        print(f"Failed to auto-start bot: {e}")
+
     # Get port from environment variable for Railway compatibility
-    port = int(os.environ.get('PORT', 5002))
+    port = int(os.environ.get('PORT', 5005))
     print(f"Starting Interface on http://0.0.0.0:{port}")
-    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0', port=port)

@@ -1,3 +1,7 @@
 venv/
 .env
 __pycache__/
+*.log
+logs/
+bot_state.json
+.DS_Store

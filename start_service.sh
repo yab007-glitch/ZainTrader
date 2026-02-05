@@ -25,6 +25,10 @@ if [ ! -f ".env" ]; then
     exit 1
 fi
 
-# 5. Run Server
-echo "Starting Interface..."
-python app.py
+# 5. Run Server (with auto-restart)
+echo "Starting Interface (with persistence)..."
+while true; do
+    python app.py
+    echo "⚠️  Process crashed or exited. Restarting in 5s..."
+    sleep 5
+done
