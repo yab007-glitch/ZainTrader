@@ -39,9 +39,9 @@ class TradingBot:
         self.state_file = "bot_state.json"
         self.running = False
         self.latest_data = {}
-        self.active_strategy = "Zain-Fractal" # Winning strategy from backtest
+        self.active_strategy = "Zain-SMC-Advanced" # The new Bank Strategy
 
-    def get_candles(self, instrument, count=300):
+    def get_candles(self, instrument, count=500):
         params = {"granularity": self.timeframe, "count": count}
         r = instruments.InstrumentsCandles(instrument=instrument, params=params)
         self.client.request(r)
@@ -61,40 +61,29 @@ class TradingBot:
         return df
 
     def calculate_indicators(self, df):
-        # Base indicators
-        df['ema_50'] = df['close'].ewm(span=50, adjust=False).mean()
-        df['ema_200'] = df['close'].ewm(span=200, adjust=False).mean()
-        delta = df['close'].diff()
-        gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
-        loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
-        rs = gain / loss.replace(0, 1e-10)
-        df['rsi'] = 100 - (100 / (1 + rs))
-        df['ma_20'] = df['close'].rolling(window=20).mean()
-        df['std_20'] = df['close'].rolling(window=20).std()
-        df['bb_upper'] = df['ma_20'] + (df['std_20'] * 2)
-        df['bb_lower'] = df['ma_20'] - (df['std_20'] * 2)
-        high_low = df['high'] - df['low']
-        high_close = (df['high'] - df['close'].shift()).abs()
-        low_close = (df['low'] - df['close'].shift()).abs()
-        tr = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
-        df['atr'] = tr.rolling(window=14).mean()
+        # 1. Volatility
+        df['atr'] = (df['high'] - df['low']).rolling(window=14).mean()
         
-        # ADX
-        df['up_move'] = df['high'] - df['high'].shift()
-        df['down_move'] = df['low'].shift() - df['low']
-        df['plus_dm'] = np.where((df['up_move'] > df['down_move']) & (df['up_move'] > 0), df['up_move'], 0)
-        df['minus_dm'] = np.where((df['down_move'] > df['up_move']) & (df['down_move'] > 0), df['down_move'], 0)
-        df['plus_di'] = 100 * (df['plus_dm'].rolling(14).mean() / df['atr'].replace(0, 1))
-        df['minus_di'] = 100 * (df['minus_dm'].rolling(14).mean() / df['atr'].replace(0, 1))
-        df['dx'] = 100 * (abs(df['plus_di'] - df['minus_di']) / (df['plus_di'] + df['minus_di']).replace(0, 1))
-        df['adx'] = df['dx'].rolling(14).mean()
-
-        # ZAIN ORIGINAL: Fractal Complexity (Efficiency Ratio)
-        # Price change over N periods / sum of absolute changes
-        n = 10
-        df['net_change'] = (df['close'] - df['close'].shift(n)).abs()
-        df['sum_changes'] = (df['close'].diff().abs()).rolling(n).sum()
-        df['fractal_efficiency'] = df['net_change'] / df['sum_changes'].replace(0, 1)
+        # 2. SMC: Liquidity Zones (H/L of the last 50 candles)
+        df['swing_high'] = df['high'].rolling(50).max().shift(1)
+        df['swing_low'] = df['low'].rolling(50).min().shift(1)
+        
+        # 3. SMC: Liquidity Sweep Detection
+        # Bullish Sweep: Price went below swing_low then closed above it
+        df['bull_sweep'] = (df['low'] < df['swing_low']) & (df['close'] > df['swing_low'])
+        # Bearish Sweep: Price went above swing_high then closed below it
+        df['bear_sweep'] = (df['high'] > df['swing_high']) & (df['close'] < df['swing_high'])
+        
+        # 4. SMC: Fair Value Gaps (Imbalance)
+        df['bull_fvg'] = (df['high'].shift(2) < df['low'])
+        df['bear_fvg'] = (df['low'].shift(2) > df['high'])
+        
+        # 5. Market Structure Shift (MSS)
+        # Using a shorter 10-period window for reaction
+        df['short_high'] = df['high'].rolling(10).max().shift(1)
+        df['short_low'] = df['low'].rolling(10).min().shift(1)
+        df['mss_bull'] = (df['close'] > df['short_high'])
+        df['mss_bear'] = (df['close'] < df['short_low'])
 
         return df
 
@@ -104,26 +93,23 @@ class TradingBot:
         signal = "HOLD"
         reason = ""
         
-        if self.active_strategy == "Multi-Regime":
-            regime = "TRENDING" if curr['adx'] > 25 else "RANGING"
-            if regime == "RANGING":
-                if curr['close'] >= curr['bb_upper'] and curr['rsi'] > 70:
-                    signal = "SELL"; reason = "MR-Ranging-Sell"
-                elif curr['close'] <= curr['bb_lower'] and curr['rsi'] < 30:
-                    signal = "BUY"; reason = "MR-Ranging-Buy"
-            else:
-                is_uptrend = curr['ema_50'] > curr['ema_200']
-                if is_uptrend and curr['rsi'] < 45 and curr['close'] > curr['ema_50']:
-                    signal = "BUY"; reason = "MR-Trending-Buy"
-                elif not is_uptrend and curr['rsi'] > 55 and curr['close'] < curr['ema_50']:
-                    signal = "SELL"; reason = "MR-Trending-Sell"
-                    
-        elif self.active_strategy == "Zain-Fractal":
-            # Strategy: High Efficiency (Clear Move) + Overstretched RSI
-            # If efficiency > 0.6, it's a very clean move
-            if curr['fractal_efficiency'] > 0.6:
-                if curr['rsi'] > 75: signal = "SELL"; reason = "Zain-Fractal-Top"
-                elif curr['rsi'] < 25: signal = "BUY"; reason = "Zain-Fractal-Bottom"
+        if self.active_strategy == "Zain-SMC-Advanced":
+            # The "Bank Reversal": 
+            # 1. Price sweeps a major liquidity zone (swing high/low)
+            # 2. Market Structure Shifts in the opposite direction
+            # 3. Entry on the FVG created by the shift
+            
+            # For simplicity on M5: We look for the Sweep + MSS combo
+            if curr['bull_sweep'] and curr['mss_bull']:
+                signal = "BUY"; reason = "SMC-Bank-Liquidity-Sweep-Bull"
+            elif curr['bear_sweep'] and curr['mss_bear']:
+                signal = "SELL"; reason = "SMC-Bank-Liquidity-Sweep-Bear"
+            
+            # Alternative: FVG re-entry
+            elif curr['mss_bull'] and curr['bull_fvg']:
+                signal = "BUY"; reason = "SMC-Imbalance-Fill-Bull"
+            elif curr['mss_bear'] and curr['bear_fvg']:
+                signal = "SELL"; reason = "SMC-Imbalance-Fill-Bear"
 
         return signal, reason, curr['atr']
 
@@ -135,9 +121,9 @@ class TradingBot:
         curr = df.iloc[-1]
         self.latest_data[instrument] = {
             "price": curr['close'],
-            "rsi": round(curr['rsi'], 2),
-            "trend": "Trending" if curr['adx'] > 25 else "Ranging",
-            "efficiency": round(curr['fractal_efficiency'], 2),
+            "strategy": self.active_strategy,
+            "sweep": "Bull" if curr['bull_sweep'] else ("Bear" if curr['bear_sweep'] else "None"),
+            "structure": "Broken-High" if curr['mss_bull'] else ("Broken-Low" if curr['mss_bear'] else "Stable"),
             "last_updated": datetime.now().isoformat()
         }
         return signal, reason, atr
@@ -149,20 +135,22 @@ class TradingBot:
             balance = float(r.response['account']['balance'])
             margin_available = float(r.response['account']['marginAvailable'])
             risk_amount = balance * 0.005
-            sl_distance = (atr * 2.0)
+            sl_distance = (atr * 1.5)
             units = int(risk_amount / sl_distance)
             current_price = self.latest_data[instrument]['price']
             est_margin = (current_price * units) / 20
             if est_margin > margin_available:
                 units = int(units * (margin_available * 0.8) / est_margin)
             if units <= 0: return
+            
             if signal == "BUY":
                 sl_price = current_price - sl_distance
-                tp_price = current_price + (sl_distance * 3)
+                tp_price = current_price + (sl_distance * 4) # SMC targets: 1:4
             else:
                 sl_price = current_price + sl_distance
-                tp_price = current_price - (sl_distance * 3)
+                tp_price = current_price - (sl_distance * 4)
                 units = -units
+                
             order_data = {
                 "order": {
                     "instrument": instrument, "units": str(units), "type": "MARKET",
@@ -173,7 +161,7 @@ class TradingBot:
             }
             r = orders.OrderCreate(self.account_id, data=order_data)
             self.client.request(r)
-            logger.info(f"TRADE [{self.active_strategy}]: {instrument} {signal} | Units: {units}")
+            logger.info(f"BANK TRADE [{self.active_strategy}]: {instrument} {signal}")
         except Exception as e:
             logger.error(f"Trade Failed: {e}")
 
@@ -197,12 +185,13 @@ class TradingBot:
 
     def run_loop(self):
         self.running = True
-        logger.info(f"ZAIN ENGINE: Active (Strategy: {self.active_strategy})")
+        logger.info(f"ZAIN BANK ENGINE: Active (Strategy: {self.active_strategy})")
         while self.running:
             for inst in self.instruments:
                 try:
                     signal, reason, atr = self.analyze_market(inst)
                     if signal != "HOLD":
+                        logger.info(f"SMC SIGNAL [{inst}]: {signal} via {reason}")
                         self.execute_trade(inst, signal, atr)
                 except Exception as e:
                     logger.error(f"Error: {e}")
