@@ -16,10 +16,15 @@ def start_bot():
     global bot
     if not bot:
         try:
+            print("Initializing TradingBot...")
             bot = TradingBot()
+            print("Starting bot loop...")
             bot.start()
             return jsonify({"status": "started", "message": "Bot initialized and started."})
         except Exception as e:
+            print(f"CRITICAL ERROR starting bot: {e}")
+            import traceback
+            traceback.print_exc()
             return jsonify({"status": "error", "message": str(e)}), 500
     return jsonify({"status": "running", "message": "Bot is already running."})
 
