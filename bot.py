@@ -31,12 +31,20 @@ logger = logging.getLogger("ZainTrader")
 
 class TradingBot:
     def __init__(self):
-        self.token = os.getenv("OANDA_API_KEY")
-        self.account_id = os.getenv("OANDA_ACCOUNT_ID")
-        self.env = os.getenv("OANDA_ENV", "practice")  # Default to practice if not set
+        self.token = os.environ.get("OANDA_API_KEY")
+        self.account_id = os.environ.get("OANDA_ACCOUNT_ID")
+        self.env = os.environ.get("OANDA_ENV", "practice")
         
+        # Debugging (Sanitized)
+        print(f"DEBUG: OANDA_API_KEY exists: {bool(self.token)}")
+        print(f"DEBUG: OANDA_ACCOUNT_ID exists: {bool(self.account_id)}")
+        print(f"DEBUG: OANDA_ENV: {self.env}")
+
         if not self.token or not self.account_id:
-            raise ValueError("Missing OANDA_API_KEY or OANDA_ACCOUNT_ID in .env")
+            missing = []
+            if not self.token: missing.append("OANDA_API_KEY")
+            if not self.account_id: missing.append("OANDA_ACCOUNT_ID")
+            raise ValueError(f"Missing environment variables: {', '.join(missing)}")
 
         self.client = oandapyV20.API(access_token=self.token, environment=self.env)
         
