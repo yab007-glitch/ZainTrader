@@ -10,6 +10,7 @@ import oandapyV20.endpoints.instruments as instruments
 import oandapyV20.endpoints.orders as orders
 import oandapyV20.endpoints.accounts as accounts
 import oandapyV20.endpoints.pricing as pricing
+import oandapyV20.endpoints.positions as positions
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
